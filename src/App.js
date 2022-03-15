@@ -24,56 +24,59 @@ function App() {
           se que hacer no se me ocurre nada
         </p>
       </div>
-      <Trabajo
-        trabajo="Dramaturgia y Actuación"
-        persona={[
-          {
-            nombre: "Emanuel Saldua",
-            iglink: "https://www.instagram.com/emanuel_zaldua/",
-          },
-        ]}
-      />
-      <Trabajo
-        trabajo="Composición y música en vivo"
-        persona={[
-          {
-            nombre: "Horacio Pallarés",
-            iglink: "https://www.instagram.com/hora.palla/",
-          },
-        ]}
-      />
-      <Trabajo
-        trabajo="Dirección"
-        persona={[
-          {
-            nombre: "Gonzalo Quintana",
-            iglink: "https://www.instagram.com/gonzalo_quintana/",
-          },
-        ]}
-      />
-      <Trabajo
-        trabajo="Escenografía y Vestuario"
-        persona={[
-          {
-            nombre: "Paola Delgado",
-            iglink: "https://www.instagram.com/paoladelgadoarte/",
-          },
-        ]}
-      />
+      <h2>ELENCO</h2>
+      <div className="container-elenco">
+        <Trabajo
+          trabajo="Dramaturgia y Actuación"
+          persona={[
+            {
+              nombre: "Emanuel Saldua",
+              iglink: "https://www.instagram.com/emanuel_zaldua/",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Composición y música en vivo"
+          persona={[
+            {
+              nombre: "Horacio Pallarés",
+              iglink: "https://www.instagram.com/hora.palla/",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Dirección"
+          persona={[
+            {
+              nombre: "Gonzalo Quintana",
+              iglink: "https://www.instagram.com/gonzalo_quintana/",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Escenografía y Vestuario"
+          persona={[
+            {
+              nombre: "Paola Delgado",
+              iglink: "https://www.instagram.com/paoladelgadoarte/",
+            },
+          ]}
+        />
 
-      <Trabajo
-        trabajo="Asistencia en Escena"
-        persona={[
-          {
-            nombre: "Yuri Alacrim",
-            iglink: "https://www.instagram.com/yalecrim/",
-          },
-          {
-            nombre: "Pablo Kopp",
-            iglink: "https://www.instagram.com/pablo.popp/",
-          },
-        ]}
-      />
+        <Trabajo
+          trabajo="Asistencia en Escena"
+          persona={[
+            {
+              nombre: "Yuri Alacrim",
+              iglink: "https://www.instagram.com/yalecrim/",
+            },
+            {
+              nombre: "Pablo Kopp",
+              iglink: "https://www.instagram.com/pablo.popp/",
+            },
+          ]}
+        />
+      </div>
 
       <div className="container-logos">
         <a href="https://www.instagram.com/nunteatrobar/" target="_blank">

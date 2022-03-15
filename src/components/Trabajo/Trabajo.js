@@ -4,7 +4,7 @@ import React from "react";
 const Trabajo = ({ trabajo, persona }) => {
   return (
     <div className="container-trabajo">
-      <h2>{trabajo}</h2>
+      <h3>{trabajo}</h3>
       <div className="container-personas">
         {persona &&
           persona.map((cosa) => (

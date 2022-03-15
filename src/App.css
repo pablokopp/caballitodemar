@@ -15,6 +15,7 @@ body {
 }
 
 h2,
+h3,
 p,
 a {
   color: #ffecd1;
@@ -44,8 +45,13 @@ a {
   margin-bottom: 2rem;
   max-width: 400px;
 }
-
 h2 {
+  color: #c57b57;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+h3 {
   color: #c57b57;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
@@ -54,6 +60,10 @@ h2 {
 p,
 a {
   font-size: 1rem;
+}
+.container-elenco {
+  border: #ffecd1 solid 2px;
+  padding: 1rem 2rem;
 }
 .container-trabajo {
   display: flex;
