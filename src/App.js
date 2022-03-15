@@ -1,23 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import Trabajo from "./components/Trabajo/Trabajo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="title">
+        <h1>CABALLITO DE MAR</h1>
+      </div>
+      <div className="sinopsis">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Estoy solo en esta casa, no se que hacer no se me ocurre nada Estoy
+          solo en esta casa, no se que hacer no se me ocurre nada Estoy solo en
+          esta casa, no se que hacer no se me ocurre nada Estoy solo en esta
+          casa, no se que hacer no se me ocurre nada Estoy solo en esta casa, no
+          se que hacer no se me ocurre nada
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <p>
+          Estoy solo en esta casa, no se que hacer no se me ocurre nada Estoy
+          solo en esta casa, no se que hacer no se me ocurre nada Estoy solo en
+          esta casa, no se que hacer no se me ocurre nada Estoy solo en esta
+          casa, no se que hacer no se me ocurre nada Estoy solo en esta casa, no
+          se que hacer no se me ocurre nada
+        </p>
+      </div>
+      <Trabajo
+        trabajo="Dramaturgia y Actuación"
+        persona={[
+          {
+            nombre: "Emanuel Saldua",
+            iglink: "https://www.instagram.com/emanuel_zaldua/",
+          },
+        ]}
+      />
+      <Trabajo
+        trabajo="Composición y música en vivo"
+        persona={[
+          {
+            nombre: "Horacio Pallarés",
+            iglink: "https://www.instagram.com/hora.palla/",
+          },
+        ]}
+      />
+      <Trabajo
+        trabajo="Dirección"
+        persona={[
+          {
+            nombre: "Gonzalo Quintana",
+            iglink: "https://www.instagram.com/gonzalo_quintana/",
+          },
+        ]}
+      />
+      <Trabajo
+        trabajo="Escenografía y Vestuario"
+        persona={[
+          {
+            nombre: "Paola Delgado",
+            iglink: "https://www.instagram.com/paoladelgadoarte/",
+          },
+        ]}
+      />
+
+      <Trabajo
+        trabajo="Asistencia en Escena"
+        persona={[
+          {
+            nombre: "Yuri Alacrim",
+            iglink: "https://www.instagram.com/yalecrim/",
+          },
+          {
+            nombre: "Pablo Kopp",
+            iglink: "https://www.instagram.com/pablo.popp/",
+          },
+        ]}
+      />
+
+      <div className="container-logos">
+        <a href="https://www.instagram.com/nunteatrobar/" target="_blank">
+          <img src={require("./images/logonun.png")} alt="Nun Teatro bar" />
         </a>
-      </header>
+      </div>
     </div>
   );
 }

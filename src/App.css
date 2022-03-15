@@ -1,38 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0f0e0f;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+h2,
+p,
+a {
+  color: #ffecd1;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+}
+
+.title {
+  width: 100%;
+}
+.title h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 3.5rem;
+  line-height: 3.2rem;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  color: #0f0e0f;
+  background-color: #ffecd1;
+}
+.sinopsis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+h2 {
+  color: #c57b57;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+p,
+a {
+  font-size: 1rem;
+}
+.container-trabajo {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.container-personas {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+.container-persona {
+  display: flex;
+  width: 100%;
+  margin: 0 1rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-ig {
+  position: relative;
+  top: 0.1rem;
+  margin-left: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-logos {
+  display: flex;
+  max-width: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-logos img {
+  width: 100%;
 }
