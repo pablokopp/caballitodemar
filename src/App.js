@@ -1,36 +1,37 @@
 import "./App.css";
 
 import Trabajo from "./components/Trabajo/Trabajo";
+import obraLogo from "./images/logocaballito.png";
 
 function App() {
   return (
     <div className="App">
       <div className="title">
-        <h1>CABALLITO DE MAR</h1>
+        <img src={obraLogo} alt="Caballito de Mar" />
       </div>
       <div className="sinopsis">
+        <p>Si no la hubiese visto no la habría conocido…</p>
+        <p>Si no la hubiese conocido no me habría enamorado…</p>
+        <p>¿Cómo habría sido?</p>
         <p>
-          Estoy solo en esta casa, no se que hacer no se me ocurre nada Estoy
-          solo en esta casa, no se que hacer no se me ocurre nada Estoy solo en
-          esta casa, no se que hacer no se me ocurre nada Estoy solo en esta
-          casa, no se que hacer no se me ocurre nada Estoy solo en esta casa, no
-          se que hacer no se me ocurre nada
+          Tal vez estaría rodeado de hijos, de miles de hijos jugando a la ronda
+          de San Miguel.
         </p>
         <p>
-          Estoy solo en esta casa, no se que hacer no se me ocurre nada Estoy
-          solo en esta casa, no se que hacer no se me ocurre nada Estoy solo en
-          esta casa, no se que hacer no se me ocurre nada Estoy solo en esta
-          casa, no se que hacer no se me ocurre nada Estoy solo en esta casa, no
-          se que hacer no se me ocurre nada
+          Tal vez no tendría motivos para preguntarme qué hago acá, o tendría
+          otros motivos.
         </p>
+        <p>Motivos nunca faltan.</p>
+        <p>¡Qué sabe uno!</p>
       </div>
-      <h2>ELENCO</h2>
       <div className="container-elenco">
+        <h2>ELENCO</h2>
+
         <Trabajo
           trabajo="Dramaturgia y Actuación"
           persona={[
             {
-              nombre: "Emanuel Saldua",
+              nombre: "Emanuel Zaldua",
               iglink: "https://www.instagram.com/emanuel_zaldua/",
             },
           ]}
@@ -39,17 +40,21 @@ function App() {
           trabajo="Composición y música en vivo"
           persona={[
             {
-              nombre: "Horacio Pallarés",
+              nombre: "Horacio Martín Pallarés",
               iglink: "https://www.instagram.com/hora.palla/",
             },
           ]}
         />
         <Trabajo
-          trabajo="Dirección"
+          trabajo="Asistencia en Escena"
           persona={[
             {
-              nombre: "Gonzalo Quintana",
-              iglink: "https://www.instagram.com/gonzalo_quintana/",
+              nombre: "Yuri Alacrim",
+              iglink: "https://www.instagram.com/yalecrim/",
+            },
+            {
+              nombre: "Pablo Kopp",
+              iglink: "https://www.instagram.com/pablo.popp/",
             },
           ]}
         />
@@ -62,17 +67,49 @@ function App() {
             },
           ]}
         />
-
         <Trabajo
-          trabajo="Asistencia en Escena"
+          trabajo="Iluminacion"
           persona={[
             {
-              nombre: "Yuri Alacrim",
+              nombre: "Matias Sendón",
+              iglink: "https://www.instagram.com/",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Fotografía"
+          persona={[
+            {
+              nombre: "Rafael Casares",
+              iglink: "https://www.instagram.com/rafa.pics",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Diseño gráfico"
+          persona={[
+            {
+              nombre: "Yuri Alecrim",
               iglink: "https://www.instagram.com/yalecrim/",
             },
+          ]}
+        />
+        <Trabajo
+          trabajo="Diseño de movimiento"
+          persona={[
             {
-              nombre: "Pablo Kopp",
-              iglink: "https://www.instagram.com/pablo.popp/",
+              nombre: "Carolina Borca",
+              iglink: "https://www.instagram.com/caroborca",
+            },
+          ]}
+        />
+
+        <Trabajo
+          trabajo="Dirección"
+          persona={[
+            {
+              nombre: "Gonzalo Quintana",
+              iglink: "https://www.instagram.com/gonzalo_quintana/",
             },
           ]}
         />

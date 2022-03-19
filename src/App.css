@@ -1,9 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  --color1: #d8d8f6;
+  --color2: #3e6990;
+  --color3: #b4a271;
+  --black: #0c090d;
 }
 body {
-  background-color: #0f0e0f;
+  background-color: var(--black);
 }
 .App {
   text-align: center;
@@ -12,58 +16,69 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 10px;
+  background-image: url(./images/caballitoFondo.png);
+  background-position: bottom left;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 h2,
 h3,
 p,
 a {
-  color: #ffecd1;
+  color: var(--color1);
   font-family: "Barlow", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .title {
   width: 100%;
+  padding: 2em 0;
 }
-.title h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-size: 3.5rem;
-  line-height: 3.2rem;
-  margin-bottom: 2rem;
-  padding: 2rem 0;
-  color: #0f0e0f;
-  background-color: #ffecd1;
+.title img {
+  width: 100%;
+  max-width: 400px;
 }
+
 .sinopsis {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin-bottom: 2rem;
   max-width: 400px;
 }
+.sinopsis p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.sinopsis p:last-of-type {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
 h2 {
-  color: #c57b57;
+  color: var(--color2);
   font-size: 1.4rem;
   letter-spacing: 0.3rem;
   margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
 }
 h3 {
-  color: #c57b57;
+  color: var(--color2);
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   margin-bottom: 0.5rem;
+  font-weight: 400;
 }
 p,
 a {
   font-size: 1rem;
 }
 .container-elenco {
-  border: #ffecd1 solid 2px;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1rem;
 }
 .container-trabajo {
   display: flex;
