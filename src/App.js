@@ -77,24 +77,11 @@ function App() {
           ]}
         />
         <Trabajo
-          trabajo="Fotografía"
-          persona={[
-            {
-              nombre: "Rafael Casares",
-              iglink: "https://www.instagram.com/rafa.pics",
-            },
-          ]}
-        />
-        <Trabajo
           trabajo="Diseño gráfico"
           persona={[
             {
               nombre: "Yuri Alecrim",
               iglink: "https://www.instagram.com/yalecrim/",
-            },
-            {
-              nombre: "Rafael Casares",
-              iglink: "https://www.instagram.com/rafa.pics",
             },
           ]}
         />
