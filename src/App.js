@@ -92,6 +92,10 @@ function App() {
               nombre: "Yuri Alecrim",
               iglink: "https://www.instagram.com/yalecrim/",
             },
+            {
+              nombre: "Rafael Casares",
+              iglink: "https://www.instagram.com/rafa.pics",
+            },
           ]}
         />
         <Trabajo
@@ -114,8 +118,27 @@ function App() {
           ]}
         />
       </div>
-
+      <div className="container-alternativa">
+        {/* <h2>Te gustó?</h2> */}
+        <a href="https://www.alternativateatral.com/obra78086-caballito-de-mar">
+          Dejanos un mensaje
+        </a>
+        {/* <h2>Querés volver?</h2> */}
+        <a href="https://publico.alternativateatral.com/entradas78086-caballito-de-mar?o=14">
+          Reserva de entradas
+        </a>
+      </div>
       <div className="container-logos">
+        <a
+          href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
+          target="_blank"
+        >
+          <img
+            className="logo-alternativa"
+            src={require("./images/alternativaLogo.png")}
+            alt="Alternativa Teatral"
+          />
+        </a>
         <a href="https://www.instagram.com/nunteatrobar/" target="_blank">
           <img src={require("./images/logonun.png")} alt="Nun Teatro bar" />
         </a>
