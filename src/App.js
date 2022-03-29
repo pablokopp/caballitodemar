@@ -49,7 +49,7 @@ function App() {
           trabajo="Asistencia en Escena"
           persona={[
             {
-              nombre: "Yuri Alacrim",
+              nombre: "Yuri Alecrim",
               iglink: "https://www.instagram.com/yalecrim/",
             },
             {
