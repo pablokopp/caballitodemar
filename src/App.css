@@ -1,6 +1,6 @@
 * {
-  --color1: #d8d8f6;
-  --color2: #3e6990;
+  --color1: #FDFFFF;
+  --color2: #FA7921;
   --color3: #b4a271;
   --black: #0c090d;
 }
@@ -14,10 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  background-image: url(./images/caballitoFondo.png);
-  background-position: bottom left;
-  background-size: 100%;
+  background-image: url(./images/fondo.png);
+  background-position: top;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h2,
@@ -32,10 +33,20 @@ a {
 .title {
   width: 100%;
   padding: 2em 0;
+  background-image: url(./images/TELEFONO.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 98% 0%;
 }
+
+@media (min-width: 600px) {
+  .title{background-position: 80% 0%;}
+}
+
 .title img {
   width: 100%;
   max-width: 400px;
+  filter: brightness(1.3);
 }
 
 .sinopsis {
@@ -54,16 +65,15 @@ a {
 
 h2 {
   color: var(--color2);
-  font-size: 1.4rem;
-  letter-spacing: 0.3rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 600;
 }
 h3 {
   color: var(--color2);
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 p,
@@ -73,14 +83,14 @@ a {
 a {
   cursor: pointer;
 }
-a:hover {
-  transform: scale(1.1);
-}
+
 .container-elenco {
-  padding: 1rem;
-  border: 2px solid var(--color2);
-  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background-color: #fa21d20c;
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
 }
+
 .container-trabajo {
   display: flex;
   width: 100%;

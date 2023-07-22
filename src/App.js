@@ -62,8 +62,8 @@ function App() {
           trabajo="Escenografía y Vestuario"
           persona={[
             {
-              nombre: "Paola Delgado",
-              iglink: "https://www.instagram.com/paoladelgadoarte/",
+              nombre: "Giuliano Benedetti",
+              iglink: "https://www.instagram.com/giulianobenedetti/",
             },
           ]}
         />
@@ -71,8 +71,8 @@ function App() {
           trabajo="Iluminacion"
           persona={[
             {
-              nombre: "Matias Sendón",
-              iglink: "https://www.instagram.com/",
+              nombre: "Juan Sebastian",
+              iglink: "",
             },
           ]}
         />
@@ -107,11 +107,19 @@ function App() {
       </div>
       <div className="container-alternativa">
         {/* <h2>Te gustó?</h2> */}
-        <a href="https://www.alternativateatral.com/obra78086-caballito-de-mar">
+        <a
+          href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
+          target="_blank"
+          rel="noreferrer"
+        >
           Dejanos un mensaje
         </a>
         {/* <h2>Querés volver?</h2> */}
-        <a href="https://publico.alternativateatral.com/entradas78086-caballito-de-mar?o=14">
+        <a
+          href="https://publico.alternativateatral.com/entradas78086-caballito-de-mar?o=14"
+          target="_blank"
+          rel="noreferrer"
+        >
           Reserva de entradas
         </a>
       </div>
@@ -119,6 +127,7 @@ function App() {
         <a
           href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
           target="_blank"
+          rel="noreferrer"
         >
           <img
             className="logo-alternativa"
@@ -126,9 +135,9 @@ function App() {
             alt="Alternativa Teatral"
           />
         </a>
-        <a href="https://www.instagram.com/nunteatrobar/" target="_blank">
+        {/* <a href="https://www.instagram.com/nunteatrobar/" target="_blank">
           <img src={require("./images/logonun.png")} alt="Nun Teatro bar" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
