@@ -126,7 +126,7 @@ function App() {
       <div className="container-alternativa">
         <h2>Si te gustó...</h2>
         <a
-          href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
+          href="https://www.instagram.com/caballito.laobra/"
           target="_blank"
           rel="noreferrer"
           className="seguinos-cta"
