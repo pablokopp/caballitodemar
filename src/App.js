@@ -1,5 +1,6 @@
 import "./App.css";
 
+import { IoLogoInstagram } from "react-icons/io5";
 import Trabajo from "./components/Trabajo/Trabajo";
 import obraLogo from "./images/logocaballito.png";
 
@@ -59,7 +60,16 @@ function App() {
           ]}
         />
         <Trabajo
-          trabajo="Escenografía y Vestuario"
+          trabajo="Escenografía y Vestuario Original"
+          persona={[
+            {
+              nombre: "Paola Delgado",
+              iglink: "https://www.instagram.com/paoladelgadoarte/",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Escenografía y Vestuario 2023"
           persona={[
             {
               nombre: "Giuliano Benedetti",
@@ -68,7 +78,16 @@ function App() {
           ]}
         />
         <Trabajo
-          trabajo="Iluminacion"
+          trabajo="Puesta de Luces Original"
+          persona={[
+            {
+              nombre: "Matias Sendón",
+              iglink: "",
+            },
+          ]}
+        />
+        <Trabajo
+          trabajo="Adaptación de Luces 2023"
           persona={[
             {
               nombre: "Juan Sebastian",
@@ -80,8 +99,7 @@ function App() {
           trabajo="Diseño gráfico"
           persona={[
             {
-              nombre: "Yuri Alecrim",
-              iglink: "https://www.instagram.com/yalecrim/",
+              nombre: "Rafa Casares",
             },
           ]}
         />
@@ -106,7 +124,16 @@ function App() {
         />
       </div>
       <div className="container-alternativa">
-        {/* <h2>Te gustó?</h2> */}
+        <h2>Si te gustó...</h2>
+        <a
+          href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
+          target="_blank"
+          rel="noreferrer"
+          className="seguinos-cta"
+        >
+          Seguinos en Instagram
+          <IoLogoInstagram color="inherit" size="1.5rem" />
+        </a>
         <a
           href="https://www.alternativateatral.com/obra78086-caballito-de-mar"
           target="_blank"
@@ -114,13 +141,12 @@ function App() {
         >
           Dejanos un mensaje
         </a>
-        {/* <h2>Querés volver?</h2> */}
         <a
           href="https://publico.alternativateatral.com/entradas78086-caballito-de-mar?o=14"
           target="_blank"
           rel="noreferrer"
         >
-          Reserva de entradas
+          Reserva más entradas
         </a>
       </div>
       <div className="container-logos">

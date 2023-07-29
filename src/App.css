@@ -14,12 +14,25 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 10px;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.App::before{
   background-image: url(./images/fondo.png);
   background-color: var(--black);
-  background-position: top;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
 }
 
 h2,
@@ -152,6 +165,14 @@ img.logo-alternativa {
   font-weight: 600;
   margin: 0.5rem auto;
 }
+
+.container-alternativa a.seguinos-cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .container-alternativa h2 {
   letter-spacing: normal;
 }
